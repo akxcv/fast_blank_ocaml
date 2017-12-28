@@ -1,0 +1,24 @@
+PATH
+  remote: .
+  specs:
+    fast_blank_ocaml (0.0.0)
+      ffi
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    benchmark-ips (2.7.2)
+    fast_blank (1.0.0)
+    ffi (1.9.17)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  benchmark-ips
+  bundler (~> 1.15)
+  fast_blank
+  fast_blank_ocaml!
+
+BUNDLED WITH
+   1.15.4

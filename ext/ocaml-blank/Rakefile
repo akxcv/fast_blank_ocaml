@@ -1,0 +1,14 @@
+require 'rake/clean'
+require 'rubygems'
+
+CLOBBER.include('libblank.so')
+
+task :default => [:build]
+
+desc 'Build the shared library'
+task :build => %w[libblank.so]
+
+file 'libblank.so' => %w[blank.ml blank.c] do
+  sh 'make'
+  sh 'mv libblank.so ../../lib'
+end
